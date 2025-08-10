@@ -1,4 +1,5 @@
 // src/app.ts
+import "reflect-metadata";
 
 // 🌐 Core imports
 import express from "express";

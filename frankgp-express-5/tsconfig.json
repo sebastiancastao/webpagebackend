@@ -1,19 +1,22 @@
 {
   "compilerOptions": {
-    "lib": ["es2021", "DOM"],
-    "target": "es2021",
+    "lib": ["ES2022"],
+    "target": "ES2022",
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "../frankgp-dist/dist",
+    "rootDir": "src",
+    "outDir": "dist",
+    "types": ["node"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true
-
-    // "baseUrl": "./",
-    // "paths": {
-    //   "@/*": ["src/*"]
-    // }
-  }
+    "esModuleInterop": true,
+    "strict": false,
+    "strictPropertyInitialization": false,
+    "useUnknownInCatchVariables": false,
+    "skipLibCheck": true,
+    "noEmitOnError": false
+  },
+  "include": ["src/**/*"]
 }

@@ -11,6 +11,7 @@
     "start:dev": "ts-node-dev --respawn src/main.ts",
     "mono": "nodemon --exec ts-node ./mono/mono.ts",
     "build": "node scripts/clean-dist.js && tsc",
+    "build:fast": "node scripts/build-esbuild.cjs",
     "build2": "tsc",
     "seed": "ts-node src/seed/seeder.ts",
     "deploy": "cd ../frankgp-dist && git add . && git commit --amend --no-edit && git push --force"
@@ -28,6 +29,7 @@
     "@types/passport": "^1.0.17",
     "@types/passport-google-oauth20": "^2.0.16",
     "@types/socket.io": "^3.0.1",
+    "esbuild": "^0.25.8",
     "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",

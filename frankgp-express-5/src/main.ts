@@ -1,4 +1,5 @@
 // src/main.ts
+import "reflect-metadata";
 import "./module/database/database.cron";
 import { AppDataSource } from "./config/typeOrmConfig";
 import { countBoot } from "./utils/countBoot";
