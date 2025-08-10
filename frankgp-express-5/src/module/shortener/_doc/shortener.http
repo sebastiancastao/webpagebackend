@@ -1,0 +1,52 @@
+### Redirect short URL (simulate client access)
+GET http://localhost:3000/example
+
+
+### Get all short URLs
+GET http://localhost:3000/api/shortener/findAll
+
+### Get all short URLs
+GET http://localhost:3000/api/shortener/findAllSelectBackup
+
+### Get one short URL by ID
+GET http://localhost:3000/api/shortener/findOne/6877f2401439940e44177483
+
+### Create short URL
+POST http://localhost:3000/api/shortener/create
+Content-Type: application/json
+
+{
+  "destination": "https://temp.app/",
+  "backHalf": "a-temp"
+}
+
+### findAllFilter
+GET http://localhost:3000/api/shortener/findAllFilter
+
+
+### findAllFilter (-5 hours for Peru)
+GET http://localhost:3000/api/shortener/findAllFilter
+?dateVisitFrom=2025-05-22T10:38
+&dateVisitTo=2025-05-22T10:40
+&sortVisitCount=DESC
+&search=a-temp
+&limit=10
+&page=1
+
+### Update short URL
+PATCH http://localhost:3000/api/shortener/update/687812da8a3f3b4a469c651e
+Content-Type: application/json
+
+{
+  "destination": "https://fgp.one/academy/mobile/flutter/intro/instalar",
+  "backHalf": "a-temp"
+}
+
+### Delete short URL
+DELETE http://localhost:3000/api/shortener/remove/68549b6c1adb4555b8ee4fcd
+
+### Redirect short URL (simulate client access)
+GET http://localhost:3000/api/shortener/redirect/google
+
+### Redirect short URL (simulate client access)
+GET http://localhost:3000/ggl123

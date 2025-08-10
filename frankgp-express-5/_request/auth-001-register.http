@@ -1,0 +1,15 @@
+@TOKEN_ADMIN={{$dotenv ACCESS_TOKEN_ADMIN}}
+
+###
+GET http://localhost:3000/api/users/findAll
+Authorization: Bearer {{TOKEN_ADMIN}}
+
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Juan Pérez",
+  "email": "user123@gmail.com",
+  "password": "user123@gmail.com"
+}

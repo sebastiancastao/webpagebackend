@@ -1,0 +1,30 @@
+### Crear una sección
+POST http://localhost:3000/api/academy/sections/create
+Content-Type: application/json
+
+{
+  "title": "Introducción a TypeScript",
+  "courseId": 1,
+  "sectionOrder": 1
+}
+
+### Obtener todas las secciones
+GET http://localhost:3000/api/academy/sections/findAll
+
+### Obtener una sección por ID
+GET http://localhost:3000/api/academy/sections/findOne/1
+
+### Obtener secciones por curso
+GET http://localhost:3000/api/academy/sections/findByCourse/1
+
+### Actualizar una sección
+PATCH http://localhost:3000/api/academy/sections/update/1
+Content-Type: application/json
+
+{
+  "title": "Introducción avanzada a TypeScript",
+  "sectionOrder": 2
+}
+
+### Eliminar una sección
+DELETE http://localhost:3000/api/academy/sections/remove/1

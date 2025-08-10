@@ -1,0 +1,42 @@
+@token={{$processEnv TOKEN}}
+
+###
+GET http://localhost:3000/api/wardrobe-upload/image?id=1&type=accessory
+Authorization: Bearer {{token}}
+
+
+### wardrobe-upload/upload
+POST http://localhost:3000/api/wardrobe-upload/image
+# Authorization: Bearer {{token}}
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="wardrobeId"
+
+1
+--MyBoundary
+Content-Disposition: form-data; name="type"
+
+top
+--MyBoundary
+Content-Disposition: form-data; name="name"
+
+Camiseta de verano
+--MyBoundary
+Content-Disposition: form-data; name="color"
+
+red
+--MyBoundary
+Content-Disposition: form-data; name="size"
+
+M
+--MyBoundary
+Content-Disposition: form-data; name="brand"
+
+Nike
+--MyBoundary
+Content-Disposition: form-data; name="image"; filename="flutter-rest-api.jpg"
+Content-Type: image/jpg
+
+< ./flutter-rest-api.jpg
+--MyBoundary--

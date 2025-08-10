@@ -1,0 +1,7 @@
+@token = admin {{$processEnv TOKEN}}
+
+###
+
+GET http://localhost:3000/api/info/ 
+Authorization: {{token}}
+

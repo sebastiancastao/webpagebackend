@@ -1,0 +1,46 @@
+@token={{$processEnv TOKEN}}
+
+
+### Obtener todos los periodos
+GET http://localhost:3000/api/contributions/period/findAll
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+### Obtener un periodo por ID
+GET http://localhost:3000/api/contributions/period/findOne/1
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+### Crear un nuevo periodo
+POST http://localhost:3000/api/contributions/period/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Sept 2025 - Ago 2026",
+  "startDate": "2025-09-01",
+  "endDate": "2026-08-31",
+  "totalQuotas": 27
+}
+
+###
+
+### Actualizar un periodo
+PATCH http://localhost:3000/api/contributions/period/update/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "totalQuotas": 26
+}
+
+###
+
+### Eliminar un periodo
+DELETE http://localhost:3000/api/contributions/period/remove/1
+Authorization: Bearer {{token}}
+Accept: application/json

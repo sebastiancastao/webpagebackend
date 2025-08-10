@@ -1,0 +1,73 @@
+### 📄 Get all feedbacks
+GET http://localhost:3000/api/restaurant/feedback/getAll
+Authorization: Bearer TU_TOKEN_AQUI
+Content-Type: application/json
+
+### 📄 Create new feedback
+POST http://localhost:3000/api/restaurant/feedback
+Authorization: Bearer TU_TOKEN_AQUI
+Content-Type: application/json
+
+{
+  "branchVisited": "sangilena-bga",
+  "name": "Frank GP",
+  "email": "franklingomez.pe@gmail.com",
+  "whatsapp": "+51999999999",
+  "birthday": "1990-07-02",
+  "waiterName": "Carlos",
+  "howDidYouKnowUs": "anuncio",
+  "socialMediaSource": ["instagram", "facebook"],
+  "experienceRating": 4,
+  "improvementSuggestions": "Todo estuvo bien, pero podría ser más rápido el servicio.",
+  "acceptTerms": true
+}
+
+### 📄 Create new feedback
+POST http://localhost:3000/api/restaurant/feedback
+Authorization: Bearer TU_TOKEN_AQUI
+Content-Type: application/json
+
+{
+  "branchVisited": "sangilena-campestre",
+  "name": "Frank GP",
+  "email": "franklingomez.pe@gmail.com",
+  "whatsapp": "+51999999999",
+  "birthday": "1990-07-02",
+  "waiterName": "Carlos",
+  "howDidYouKnowUs": "anuncio",
+  "socialMediaSource": "instagram",
+  "experienceRating": 4,
+  "improvementSuggestions": "Todo estuvo bien, pero podría ser más rápido el servicio.",
+  "acceptTerms": true
+}
+
+###
+
+### 📄 Get one feedback by ID
+GET http://localhost:3000/api/restaurant/feedback/1
+Content-Type: application/json
+
+###
+
+### 📄 Update feedback by ID
+PUT http://localhost:3000/api/restaurant/feedback/1
+Content-Type: application/json
+
+{
+  "name": "Juan Actualizado",
+  "email": "juan.actualizado@example.com",
+  "whatsapp": "+51999999888",
+  "birthday": "1990-07-03",
+  "waiterName": "Ana",
+  "howDidYouKnowUs": "cliente",
+  "socialMediaSource": "",
+  "experienceRating": 5,
+  "improvementSuggestions": "",
+  "acceptTerms": true
+}
+
+###
+
+### 📄 Delete feedback by ID
+DELETE http://localhost:3000/api/restaurant/feedback/1
+Content-Type: application/json

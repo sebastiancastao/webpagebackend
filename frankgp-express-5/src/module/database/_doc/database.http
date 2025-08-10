@@ -1,0 +1,41 @@
+@dbFile=mysql-2025-05-31-145824.sql
+
+### list
+GET http://localhost:3000/api/db/list
+
+### download
+GET http://localhost:3000/api/db/download/mysql-2025-05-20-061020.sql
+
+### backup
+POST http://localhost:3000/api/db/backup
+
+### backupNodeJS
+POST http://localhost:3000/api/db/backupNodeJS
+
+### restore
+PATCH http://localhost:3000/api/db/restore/{{dbFile}}
+
+### restoreNodeJS
+PATCH http://localhost:3000/api/db/restoreNodeJS/{{dbFile}}
+
+### rename
+PATCH http://localhost:3000/api/db/rename/{{dbFile}}
+Content-Type: application/json
+
+{
+  "newName": "renamed-backup.sql"
+}
+
+### delete
+DELETE http://localhost:3000/api/db/delete/renamed-backup.sql
+
+### Upload SQL backup file
+POST http://localhost:3000/api/db/upload
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="file"; filename="backup-example.sql"
+Content-Type: application/sql
+
+< ./backup-example.sql
+--MyBoundary--

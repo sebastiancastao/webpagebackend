@@ -1,0 +1,37 @@
+### TRACK - Registrar visita o estadística
+POST http://localhost:3000/api/stat/track
+Content-Type: application/json
+
+{
+  "time": "May 17, 2025 at 19:31",
+  "currentURL": "https://dev.appsystered.com/",
+  "referrerURL": "",
+  "ip": "2803:a3e0:18c2:6030:70e4:e6c7:c3f6:854c",
+  "city": "Juliaca",
+  "countryName": "Peru",
+  "timezone": "America/Lima",
+  "utcOffset": "-0500",
+  "countryCallingCode": "+51",
+  "currency": "PEN",
+  "currencyName": "Sol",
+  "languages": "es-PE,qu,ay",
+  "countryPopulation": 31989256,
+  "org": "DESARROLLO DE INFRAESTRUCTURA DE TELECOMUNICACIONES PERU S.A.C. INFRATEL",
+  "rawTime": "May 17, 2025 at 19:31"
+}
+
+### GET ALL - Ver todos los registros
+GET http://localhost:3000/api/stat/findAll
+Content-Type: application/json
+
+### simulacion a https://ipapi.co/json/
+GET http://localhost:3000/api/stat/ipapi_co_json
+Content-Type: application/json
+
+### GET ONE - Ver un registro específico
+GET http://localhost:3000/api/stat/findOne/1
+Content-Type: application/json
+
+### DELETE - Eliminar un registro
+DELETE http://localhost:3000/api/stat/remove/1
+Content-Type: application/json

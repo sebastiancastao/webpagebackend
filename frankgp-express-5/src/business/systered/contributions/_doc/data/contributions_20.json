@@ -1,0 +1,22 @@
+[
+    { "user": "Alirio Manrique",   "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Eloina Manrique",   "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Pedro Contreras",   "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Pedro Contreras",   "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Augusto Contreras", "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Augusto Contreras", "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Sandra Moreno",     "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Sandra Moreno",     "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Brayan Idarraga",   "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Brayan Moreno",     "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Diego Torres",      "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Carolina Reatiga",  "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Maria Vargas",      "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Stella Amaya",      "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "David Lopez",       "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Jessica Plata",     "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Jessica Plata",     "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Cesar Manrique",    "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Cesar Manrique",    "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 },
+    { "user": "Diego Contreras",   "status": "Confirmed", "valuePerQuota": 20000, "period": "2024-09-20 to 2025-09-26", "totalQuotas": 27, "totalAmount": 540000 }
+]

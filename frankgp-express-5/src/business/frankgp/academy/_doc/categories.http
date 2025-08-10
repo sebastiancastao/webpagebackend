@@ -1,0 +1,27 @@
+### Crear categoría
+POST http://localhost:3000/api/academy/categories/create
+Content-Type: application/json
+
+{
+  "name": "Programación"
+}
+
+### Obtener todas las categorías
+GET http://localhost:3000/api/academy/categories/findAll
+
+### Obtener una categoría por ID
+GET http://localhost:3000/api/academy/categories/findOne/1
+
+### Obtener una categoría por devops
+GET http://localhost:3000/api/academy/categories/findSlug/devops
+
+### Actualizar una categoría
+PUT http://localhost:3000/api/academy/categories/update/1
+Content-Type: application/json
+
+{
+  "name": "Desarrollo Web"
+}
+
+### Eliminar una categoría
+DELETE http://localhost:3000/api/academy/categories/remove/1

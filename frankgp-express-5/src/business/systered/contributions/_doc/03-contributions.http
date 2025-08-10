@@ -1,0 +1,50 @@
+@token={{$processEnv TOKEN}}
+
+
+### Obtener todas las contribuciones
+GET http://localhost:3000/api/contributions/findAll
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+### Obtener una contribución por ID
+GET http://localhost:3000/api/contributions/findOne/1
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+### Crear nueva contribución
+POST http://localhost:3000/api/contributions/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "user": "58c609d6-31ec-4e11-9635-eb55345598f8",
+  "period": 1,
+  "fundType": "FONDO1",
+  "valuePerQuota": 20000,
+  "totalQuotas": 27,
+  "totalAmount": 540000
+}
+
+###
+
+### Actualizar una contribución
+PATCH http://localhost:3000/api/contributions/update/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "valuePerQuota": 50000,
+  "totalQuotas": 20,
+  "totalAmount": 1000000
+}
+
+###
+
+### Eliminar una contribución
+DELETE http://localhost:3000/api/contributions/remove/1
+Authorization: Bearer {{token}}
+Accept: application/json

@@ -1,0 +1,34 @@
+### Crear lección
+POST http://localhost:3000/api/academy/lessons/create
+Content-Type: application/json
+
+{
+  "title": "Lección 1",
+  "content": "Contenido de la lección 1",
+  "courseId": 1,
+  "lessonOrder": 1
+}
+
+### Obtener todas las lecciones
+GET http://localhost:3000/api/academy/lessons/findAll
+
+### Obtener una lección por ID
+GET http://localhost:3000/api/academy/lessons/findOne/25010101
+
+### Obtener una lección por findSlug
+GET http://localhost:3000/api/academy/lessons/findSlug/que-es-aws
+
+### Obtener lecciones por curso
+GET http://localhost:3000/api/academy/lessons/byCourse/1
+
+### Actualizar una lección
+PATCH http://localhost:3000/api/academy/lessons/update/1
+Content-Type: application/json
+
+{
+  "title": "Lección 1 actualizada",
+  "lessonOrder": 2
+}
+
+### Eliminar una lección
+DELETE http://localhost:3000/api/academy/lessons/remove/1

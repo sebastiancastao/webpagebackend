@@ -1,0 +1,25 @@
+@ACCESS_TOKEN_ADMIN={{$dotenv ACCESS_TOKEN_ADMIN}}
+@ACCESS_TOKEN_USER={{$dotenv ACCESS_TOKEN_USER}}
+@REFRESH_TOKEN={{$dotenv REFRESH_TOKEN}}
+
+###
+# @name postLogin
+@accessToken={{postLogin.response.body.accessToken}}
+@refreshToken={{postLogin.response.body.refreshToken}}
+
+
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin@gmail.com"
+}
+
+### decodeToken
+POST http://localhost:3000/api/auth/decode-token
+Authorization: Bearer {{accessToken}}
+
+### refreshToken
+POST http://localhost:3000/api/auth/refresh-token
+Authorization: Bearer {{refreshToken}}

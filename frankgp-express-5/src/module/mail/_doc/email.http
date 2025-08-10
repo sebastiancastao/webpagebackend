@@ -1,0 +1,11 @@
+### Enviar correo de contacto
+POST http://localhost:3000/api/email/submit
+Content-Type: application/json
+
+{
+  "name": "franklingomez",
+  "email": "franklingomez.pe@gmail.com",
+  "subject": "Consulta general",
+  "message": "Hola, quiero más información sobre sus servicios.",
+  "currentUrl": "https://restclient.com/contacto"
+}

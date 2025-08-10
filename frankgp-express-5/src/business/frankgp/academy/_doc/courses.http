@@ -1,0 +1,38 @@
+### Crear un nuevo curso
+POST http://localhost:3000/api/academy/courses/create
+Content-Type: application/json
+
+{
+  "title": "Curso de Node.js",
+  "description": "Aprende Node.js desde cero con ejemplos prácticos."
+}
+
+###
+
+### Obtener todos los cursos
+GET http://localhost:3000/api/academy/courses/findAll
+
+###
+
+### Obtener un curso por ID
+GET http://localhost:3000/api/academy/courses/findSlug/aws
+
+###
+
+### Obtener un curso por ID
+GET http://localhost:3000/api/academy/courses/findOne/25010000
+
+###
+
+### Actualizar un curso
+PATCH http://localhost:3000/api/academy/courses/update/1
+Content-Type: application/json
+
+{
+  "title": "Curso actualizado de Node.js"
+}
+
+###
+
+### Eliminar un curso
+DELETE http://localhost:3000/api/academy/courses/remove/1

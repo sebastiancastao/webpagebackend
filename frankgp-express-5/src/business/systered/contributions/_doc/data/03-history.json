@@ -1,0 +1,23 @@
+[
+  {
+    "paymentDate": "2024-09-20",
+    "userId": 1,
+    "fullName": "Alirio Manrique",
+    "fundType": "FONDO1",
+    "amount": 20000
+  },
+  {
+    "paymentDate": "2024-09-20",
+    "userId": 1,
+    "fullName": "Alirio Manrique",
+    "fundType": "FONDO2",
+    "amount": 50000
+  },
+  {
+    "paymentDate": "2024-09-20",
+    "userId": 2,
+    "fullName": "Pedro Contreras",
+    "fundType": "FONDO1",
+    "amount": 20000
+  }
+]

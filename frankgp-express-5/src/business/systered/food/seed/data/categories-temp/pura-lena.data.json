@@ -1,0 +1,58 @@
+{
+  "name": "Pura Leña",
+  "slug": "pura-lena",
+  "description": "Platos a la brasa, inspirados en la tradición llanera y cocinados con fuego y pasión.",
+  "thumbnail": "/thumbs/pura-lena.jpg",
+  "menus": [
+    {
+      "name": "Carne a la Llanera",
+      "slug": "carne-a-la-llanera",
+      "price": 44900,
+      "offerPrice": 40900,
+      "description": "Degusta 250 gramos de la mejor carne a la llanera, acompañada con papa y yuca al vapor.",
+      "images": ["/image1.jpg", "/image.jpg"],
+      "videos": ["/video1.mp4", "/video2.mp4"],
+      "recomendacionDelDia": true
+    },
+    {
+      "name": "Costillas BBQ",
+      "slug": "costillas-bbq",
+      "price": 47900,
+      "offerPrice": 42900,
+      "description": "Jugosas costillas de cerdo bañadas en salsa BBQ, servidas con papas rústicas y ensalada fresca.",
+      "images": ["/costillas1.jpg", "/costillas2.jpg"],
+      "videos": ["/costillas-prep.mp4"],
+      "recomendacionDelDia": false
+    },
+    {
+      "name": "Chorizo Santandereano",
+      "slug": "chorizo-santandereano",
+      "price": 18900,
+      "offerPrice": 16900,
+      "description": "Auténtico chorizo artesanal acompañado de arepa blanca y ají criollo.",
+      "images": ["/chorizo1.jpg"],
+      "videos": [],
+      "recomendacionDelDia": false
+    },
+    {
+      "name": "Pechuga a la Brasa",
+      "slug": "pechuga-a-la-brasa",
+      "price": 35900,
+      "offerPrice": 32900,
+      "description": "Pechuga de pollo jugosa cocinada a la brasa, servida con arroz, ensalada y papa salada.",
+      "images": ["/pechuga1.jpg", "/pechuga2.jpg"],
+      "videos": ["/pechuga.mp4"],
+      "recomendacionDelDia": true
+    },
+    {
+      "name": "Churrasco Tradicional",
+      "slug": "churrasco-tradicional",
+      "price": 52900,
+      "offerPrice": 49900,
+      "description": "Corte grueso de res preparado al carbón con papas rústicas y vegetales salteados.",
+      "images": ["/churrasco1.jpg"],
+      "videos": [],
+      "recomendacionDelDia": false
+    }
+  ]
+}

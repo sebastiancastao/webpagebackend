@@ -1,0 +1,47 @@
+@token=Bearer {{$processEnv TOKEN}}
+@token_superadmin=Bearer {{$dotenv ACCESS_TOKEN_SUPERADMIN}}
+@token_user=Bearer {{$dotenv ACCESS_TOKEN_USER}}
+
+### allRoles
+GET http://localhost:3000/api/users/allRoles
+Content-Type: application/json
+Authorization: {{token_user}}
+
+### admin
+GET http://localhost:3000/api/users/admin
+Content-Type: application/json
+Authorization: {{token}}
+
+### superAdmin
+GET http://localhost:3000/api/users/superAdmin
+Content-Type: application/json
+Authorization: {{token_superadmin}}
+
+### ========== LOGIN  ==========
+
+### login > user
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password": "user@gmail.com"
+}
+
+### login > admin
+POST http://localhost:3000/api/auth/login 
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin@gmail.com"
+}
+
+### login > superadmin
+POST http://localhost:3000/api/auth/login 
+Content-Type: application/json
+
+{
+    "email": "{{$dotenv ADMIN_EMAIL}}",
+    "password": "{{$dotenv ADMIN_PASS}}"
+}

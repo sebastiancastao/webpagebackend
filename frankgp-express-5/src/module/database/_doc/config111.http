@@ -1,0 +1,8 @@
+### dropAndSync
+POST http://localhost:3000/api/db/config/dropAndSync
+
+### runSeeders
+POST http://localhost:3000/api/db/config/runSeeders
+
+### dropAndSeed
+POST http://localhost:3000/api/db/config/dropAndSeed

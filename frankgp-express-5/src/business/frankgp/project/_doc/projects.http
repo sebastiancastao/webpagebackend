@@ -1,0 +1,75 @@
+### Crear un nuevo proyecto
+POST http://localhost:3000/api/projects/create 
+Content-Type: application/json
+
+{
+  "id": 250301,
+  "title": "Transport Website",
+  "description": "Servicio de Trasporte de Carga Pesada",
+  "image": "https://i.postimg.cc/TPxkv0w3/mockup-desktop.webp",
+  "category": "Full Stack",
+  "tags": ["fullstack", "frontend", "backend", "cpanel", "figma"],
+  "images": [
+    {
+      "url": "https://i.postimg.cc/1XBWtQV7/mockup-desktop.webp",
+      "alt": "home page"
+    }
+  ],
+  "dates": {
+    "start": "2022-06-01",
+    "end": "2022-06-30",
+    "duration": "1 mes"
+  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/fgp555/"
+    },
+    {
+      "name": "website",
+      "url": "https://e-transportech.org"
+    }
+  ],
+  "technologies": [
+    { "name": "Figma", "type": "design", "icon": "fab fa-figma" },
+    { "name": "Angular", "type": "frontend", "icon": "fab fa-angular" },
+    { "name": "NodeJS", "type": "backend", "icon": "fab fa-node-js" },
+    { "name": "Docker", "type": "devops", "icon": "fab fa-docker" },
+    { "name": "MySQL", "type": "database", "icon": "fas fa-database" }
+  ],
+  "collaborators": [
+    {
+      "roles": ["frontend", "design"],
+      "skillsUsed": [
+        { "name": "Angular", "type": "frontend" },
+        { "name": "Figma", "type": "design" }
+      ],
+      "user": {"id": 20250101}
+    }
+  ]
+}
+
+
+### Obtener todos los proyectos
+GET http://localhost:3000/api/projects/findAll
+
+### details
+GET http://localhost:3000/api/projects/findOne/250301
+
+### Buscar proyecto por slug
+GET http://localhost:3000/api/projects/findOneSlug/transpaservic-web
+
+### Actualizar un proyecto
+PATCH http://localhost:3000/api/projects/update/250301 
+Content-Type: application/json
+
+{
+    "title": "Nuevo Título para el Proyecto",
+    "description": "Descripción actualizada"
+}
+
+###
+
+### Eliminar un proyecto
+
+DELETE http://localhost:3000/api/projects/remove/250301

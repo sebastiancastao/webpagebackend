@@ -1,0 +1,48 @@
+### Crear producto digital
+POST http://localhost:3000/api/product/create
+Content-Type: application/json
+
+{
+  "name": "Navbar CSS Premium",
+  "shortDescription": "Un navbar responsive y moderno en CSS puro",
+  "longDescription": "https://domain.com/css/product1-full-description.md",
+  "price": 19.99,
+  "isActive": true,
+  "category": "CSS",
+  "tags": ["responsive", "navbar", "premium"],
+  "images": [
+    "https://mi-servidor.com/images/navbar1.png",
+    "https://mi-servidor.com/images/navbar2.png"
+  ],
+  "videoUrl": "https://www.youtube.com/embed/XXXXXXXXXXX",
+  "fileUrl": "https://mi-servidor.com/files/navbar-css-premium.zip",
+  "fileType": "css",
+  "fileSize": 102400
+}
+
+### Obtener todos los productos
+GET http://localhost:3000/api/product/findAll
+?dateFrom=2025-05-22T10:38
+&dateTo=2025-05-22T10:40
+&search=
+&limit=10
+&page=1
+
+### Obtener un producto por ID
+GET http://localhost:3000/api/product/findOne/1
+
+
+### slug
+GET http://localhost:3000/api/product/findSlug/navbar-css-premium
+
+### Actualizar producto
+PATCH http://localhost:3000/api/product/update/1
+Content-Type: application/json
+
+{
+  "price": 24.99,
+  "isActive": false
+}
+
+### Eliminar producto
+DELETE http://localhost:3000/api/product/remove/1

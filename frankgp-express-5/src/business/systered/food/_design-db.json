@@ -1,0 +1,34 @@
+[
+  {
+    "name": "restaurant1",
+    "location": "location1",
+    "slug": "sangilena-bga",
+    "whatsapp": "whatsapp1",
+    "createdAt": "2025-06-15T00:00:00.000Z",
+    "tables": [],
+    "users": [],
+    "categories": [
+      {
+        "name": "Cervezas",
+        "menus": []
+      }
+    ],
+    "feedback": []
+  },
+  {
+    "name": "restaurant1",
+    "location": "location1",
+    "slug": "sangilena-campestre",
+    "whatsapp": "whatsapp1",
+    "createdAt": "2025-06-15T00:00:00.000Z",
+    "tables": [],
+    "users": [],
+    "categories": [
+      {
+        "name": "Cervezas",
+        "menus": []
+      }
+    ],
+    "feedback": []
+  }
+]

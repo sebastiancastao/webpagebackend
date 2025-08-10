@@ -1,0 +1,72 @@
+getAll users por fecha de creacion 
+
+frontend: add statisticas grafico
+
+youtube se sobrepone a navbar
+la imagen de la seccion en modo desarrollo esta sin max with 100
+
+
+usar slug https://fgp.one/projects/250201
+
+en el navbar resaltar pagina actual
+
+add capcha a /contact
+
+cuando cambie de /path que suba arriba
+
+imgs en 
+	BackendApi.tsx
+	BusinessPage.tsx 
+	MobilePage.tsx
+	WhatsappPage.tsx
+
+button links en 
+	BusinessPage.tsx 
+	WebApp.tsx
+	HomePage.tsx
+
+add backend ContactPage.tsx
+
+crear un sitemap.xml y robot.txt para le frontend
+
+en /database crear enpoint para ejecutar sql
+
+ocultar email para los robot span en componente
+app > send email
+
+store > creacion de ventas de producto digitales > componentes web
+app > monitorizacion via websocket
+
+refactor table style component
+
+auth0 / midudev
+
+crear enpoint para seeder
+enviar backup a google drive
+agregar setting/test-email / test-whatsapp 
+mejorar el password de setting/db
+
+fix Front - cuando estoy en la pag 2 de orde y se hace el filtro no funciona correctamente
+
+whatsapp - investigar api oficial
+front/ add store setting
+back/ json.parse setting
+front/superadmin/ add button seeder
+websocket/ add mode development
+front/ add trunstile
+mobile/ crear un dev mode app
+fullstack/ add guest user
+hosting/ arrglar email en transpasevic y frankgp
+front/ clone swat alert
+websocket/ add test send websocket
+front/ separate authmodule
+fullstack/ clone de jira
+full/ crear link de un solo uso
+full/ crear usuario tester
+
+
+
+========== Tutoriales ==========
+websocket
+turnstile
+refeshtoken

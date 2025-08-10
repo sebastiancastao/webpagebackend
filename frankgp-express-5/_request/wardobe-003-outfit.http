@@ -1,0 +1,42 @@
+@token={{$dotenv ACCESS_TOKEN_ADMIN}}
+
+### 🔍 Obtener todos los outfits
+GET http://localhost:3000/api/outfits/findAll
+Authorization: Bearer {{token}}
+
+### 🔍 Obtener un outfit por ID
+GET http://localhost:3000/api/outfits/findOne/1
+Authorization: Bearer {{token}}
+
+### ➕ Crear un nuevo outfit
+POST http://localhost:3000/api/outfits/create
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "Outfit para evento",
+  "description": "Ideal para una salida formal",
+  "date": "2025-07-18",
+  "type": "fiesta",
+  "wardrobeId": 1,
+  "tops": [1, 2],
+  "bottoms": [3],
+  "accessories": []
+}
+
+### ✏️ Actualizar un outfit existente
+PATCH http://localhost:3000/api/outfits/update/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "Outfit actualizado",
+  "type": "trabajo",
+  "tops": [2],
+  "bottoms": [3],
+  "accessories": [6]
+}
+
+### 🗑️ Eliminar un outfit por ID
+DELETE http://localhost:3000/api/outfits/remove/1
+Authorization: Bearer {{token}}

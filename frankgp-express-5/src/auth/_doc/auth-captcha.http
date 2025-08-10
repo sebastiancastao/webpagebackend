@@ -1,0 +1,22 @@
+@token=Bearer{{$processEnv TOKEN}}
+
+###
+POST http://localhost:3000/api/auth/loginNoCaptcha
+Content-Type: application/json
+
+{
+    "email": "{{$dotenv ADMIN_EMAIL}}",
+    "password": "{{$dotenv ADMIN_PASS}}",
+    "token": "REPLACE_WITH_ACTUAL_TOKEN",
+    "ignoreCAPTCHA": true
+}
+
+###
+POST http://localhost:3000/api/auth/loginNoCaptcha
+Content-Type: application/json
+
+{
+    "email": "{{$dotenv ADMIN_EMAIL}}",
+    "password": "{{$dotenv ADMIN_PASS}}",
+    "token": "0.v43UY5G0q..."
+}

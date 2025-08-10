@@ -1,0 +1,49 @@
+@token={{$processEnv TOKEN}}
+
+
+### Obtener todos los pagos
+GET http://localhost:3000/api/contributions/payout/findAll
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+### Obtener un pago por ID
+GET http://localhost:3000/api/contributions/payout/findOne/1
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+### Crear un pago
+POST http://localhost:3000/api/contributions/payout/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "puesto": 1,
+  "paymentDate": "2025-09-12",
+  "cuotaFondo1": 20000,
+  "cuotaFondo2": 50000,
+  "totalPayment": 700000,
+  "user": { "_id": "58c609d6-31ec-4e11-9635-eb55345598f8" },
+  "period": { "id": 1 }
+}
+
+###
+
+### Actualizar un pago
+PATCH http://localhost:3000/api/contributions/payout/update/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "totalPayment": 750000
+}
+
+###
+
+### Eliminar un pago
+DELETE http://localhost:3000/api/contributions/payout/remove/1
+Authorization: Bearer {{token}}
+Accept: application/json

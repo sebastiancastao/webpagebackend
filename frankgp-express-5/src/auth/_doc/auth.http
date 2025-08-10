@@ -1,0 +1,54 @@
+@token=Bearer {{$processEnv TOKEN}}
+@timestamp={{$timestamp -1740241257 s}}
+
+###
+
+# @name totalusers
+@res_body_total={{totalusers.response.body.totalItems}}
+
+GET http://localhost:3000/api/users/findAll
+Authorization: {{token}}
+
+###
+POST http://localhost:3000/api/auth/register 
+Content-Type: application/json
+
+{
+    "username": "user_{{timestamp}}",
+    "name": "User",
+    "lastName": "LastName",
+    "email": "user_{{res_body_total}}@gmail.com",
+    "password": "P4ssWord@123",
+    "whatsapp": "{{timestamp}}",
+    "photo": "https://i.postimg.cc/T3PVPkLH/icon-user.webp",
+    "role": "admin",
+    "sendMail": false,
+    "sendWhatsApp": false
+}
+
+### 👤 CHECK EXISTENCE
+GET http://localhost:3000/api/auth/check-existence
+?email=user@gmail.com
+&username=admin
+
+###
+POST http://localhost:3000/api/auth/login 
+Content-Type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password": "user@gmail.com"
+}
+
+###
+POST http://localhost:3000/api/auth/login 
+Content-Type: application/json
+
+{
+    "email": "{{$dotenv ADMIN_EMAIL}}",
+    "password": "{{$dotenv ADMIN_PASS}}"
+}
+
+###
+GET http://localhost:3000/api/auth/me
+Authorization: {{token}}

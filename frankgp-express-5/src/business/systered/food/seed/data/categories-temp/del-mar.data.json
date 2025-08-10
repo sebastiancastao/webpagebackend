@@ -1,0 +1,58 @@
+{
+  "name": "Del Mar",
+  "slug": "del-mar",
+  "description": "Sabores frescos del océano traídos a tu mesa.",
+  "thumbnail": "/thumbs/del-mar.jpg",
+  "menus": [
+    {
+      "name": "Cazuela de Mariscos",
+      "slug": "cazuela-de-mariscos",
+      "price": 52900,
+      "offerPrice": 48900,
+      "description": "Deliciosa mezcla de camarones, calamares y pescado en crema de coco, acompañada de arroz con coco.",
+      "images": ["/cazuela1.jpg", "/cazuela2.jpg"],
+      "videos": ["/cazuela.mp4"],
+      "recomendacionDelDia": true
+    },
+    {
+      "name": "Filete de Pescado Frito",
+      "slug": "filete-de-pescado-frito",
+      "price": 39900,
+      "offerPrice": 36900,
+      "description": "Crujiente filete de pescado frito con patacones y ensalada fresca.",
+      "images": ["/pescado1.jpg"],
+      "videos": [],
+      "recomendacionDelDia": false
+    },
+    {
+      "name": "Arroz Marinero",
+      "slug": "arroz-marinero",
+      "price": 45900,
+      "offerPrice": 42900,
+      "description": "Arroz caldoso con camarones, calamar, mejillones y pimientos, servido con patacón.",
+      "images": ["/arroz-marinero1.jpg", "/arroz-marinero2.jpg"],
+      "videos": ["/arroz-marinero.mp4"],
+      "recomendacionDelDia": false
+    },
+    {
+      "name": "Camarones al Ajillo",
+      "slug": "camarones-al-ajillo",
+      "price": 47900,
+      "offerPrice": 43900,
+      "description": "Camarones salteados en mantequilla con ajo y perejil, acompañados de arroz y ensalada.",
+      "images": ["/camarones1.jpg"],
+      "videos": [],
+      "recomendacionDelDia": true
+    },
+    {
+      "name": "Mojarra en Salsa de Coco",
+      "slug": "mojarra-en-salsa-de-coco",
+      "price": 49900,
+      "offerPrice": 46900,
+      "description": "Mojarra fresca cocinada en salsa de coco, servida con arroz con coco y ensalada tropical.",
+      "images": ["/mojarra1.jpg", "/mojarra2.jpg"],
+      "videos": ["/mojarra-coco.mp4"],
+      "recomendacionDelDia": false
+    }
+  ]
+}

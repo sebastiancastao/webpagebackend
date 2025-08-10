@@ -1,0 +1,67 @@
+{
+  "id": 250301,
+  "title": "Transport Website",
+  "description": "Servicio de Trasporte de Carga Pesada",
+  "image": "https://i.postimg.cc/TPxkv0w3/mockup-desktop.webp",
+  "category": "Full Stack",
+  "tags": ["fullstack", "frontend", "backend", "cpanel", "figma"],
+  "images": [
+    {
+      "url": "https://i.postimg.cc/1XBWtQV7/mockup-desktop.webp",
+      "alt": "home page"
+    }
+  ],
+  "dates": {
+    "start": "2022-06-01",
+    "end": "2022-06-30",
+    "duration": "1 mes"
+  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/fgp555/"
+    },
+    {
+      "name": "website",
+      "url": "https://e-transportech.org"
+    }
+  ],
+  "technologies": [
+    { "name": "Figma", "type": "design", "icon": "fab fa-figma" },
+    { "name": "Angular", "type": "frontend", "icon": "fab fa-angular" },
+    { "name": "NodeJS", "type": "backend", "icon": "fab fa-node-js" },
+    { "name": "Docker", "type": "devops", "icon": "fab fa-docker" },
+    { "name": "MySQL", "type": "database", "icon": "fas fa-database" }
+  ],
+  "collaborators": [
+    {
+      "roles": ["frontend", "design"],
+      "skillsUsed": [
+        { "name": "Angular", "type": "frontend" },
+        { "name": "Figma", "type": "design" }
+      ],
+      "user": {
+        "id": 101,
+        "name": "Giovanna",
+        "image": "https://github.com/GMRGIOVANNAMARTINEZRUSSO.png",
+        "title": "Full Stack Developer",
+        "description": "Developer apasionada con experiencia en el desarrollo de interfaces intuitivas y atractivas.",
+        "skills": [{ "name": "Angular" }, { "name": "NodeJS" }, { "name": "Figma" }],
+        "links": [
+          {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/giovanna-martinez-russo/"
+          },
+          {
+            "name": "github",
+            "url": "https://github.com/GMRGIOVANNAMARTINEZRUSSO"
+          },
+          {
+            "name": "portfolio",
+            "url": "https://gmrgiovannamartinezrusso.github.io/"
+          }
+        ]
+      }
+    }
+  ]
+}

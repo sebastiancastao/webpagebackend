@@ -1,0 +1,95 @@
+{
+  "period": {
+    "id": 1,
+    "name": "Sept 2024 - Ago 2025",
+    "startDate": "2024-09-20",
+    "endDate": "2025-08-22",
+    "totalQuotas": 27
+  },
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Alirio Manrique",
+      "email": "alirio@example.com"
+    },
+    {
+      "id": 2,
+      "fullName": "Pedro Contreras",
+      "email": "pedro@example.com"
+    }
+  ],
+  "contributions": [
+    {
+      "id": 1,
+      "userId": 1,
+      "periodId": 1,
+      "fundType": "FONDO1",
+      "valuePerQuota": 20000,
+      "totalQuotas": 27,
+      "totalAmount": 540000
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "periodId": 1,
+      "fundType": "FONDO2",
+      "valuePerQuota": 50000,
+      "totalQuotas": 27,
+      "totalAmount": 1350000
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "periodId": 1,
+      "fundType": "FONDO1",
+      "valuePerQuota": 20000,
+      "totalQuotas": 27,
+      "totalAmount": 540000
+    }
+  ],
+  "payouts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "periodId": 1,
+      "puesto": 2,
+      "paymentDate": "2024-10-04",
+      "cuotaFondo1": 20000,
+      "cuotaFondo2": 50000,
+      "totalPayment": 50000
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "periodId": 1,
+      "puesto": 15,
+      "paymentDate": "2025-04-04",
+      "cuotaFondo1": 20000,
+      "cuotaFondo2": 50000,
+      "totalPayment": 50000
+    }
+  ],
+  "paymentHistory": [
+    {
+      "id": 1,
+      "userId": 1,
+      "contributionId": 1,
+      "paymentDate": "2024-09-20",
+      "amount": 20000
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "contributionId": 2,
+      "paymentDate": "2024-09-20",
+      "amount": 50000
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "contributionId": 3,
+      "paymentDate": "2024-09-20",
+      "amount": 20000
+    }
+  ]
+}

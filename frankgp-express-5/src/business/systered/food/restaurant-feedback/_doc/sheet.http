@@ -1,0 +1,20 @@
+###
+GET http://localhost:3000/api/sheet
+
+
+### 📤 Enviar datos a Google Sheets
+POST http://localhost:3000/api/sheet
+Content-Type: application/json
+
+{
+  "name": "Juan Pérez",
+  "email": "juan@example.com",
+  "whatsapp": "+51999999999",
+  "birthday": "1990-07-02",
+  "sawAd": true,
+  "howDidYouKnowUs": "Por Instagram",
+  "branchVisited": "Sede Central",
+  "waiterName": "Carlos",
+  "experienceRating": 5,
+  "improvementSuggestions": "Todo excelente, sigan así"
+}

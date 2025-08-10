@@ -1,0 +1,45 @@
+@token = {{$processEnv TOKEN}}
+
+### Obtener todo el historial de pagos
+GET http://localhost:3000/api/contributions/payment-history/findAll
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+### Obtener un registro por ID
+GET http://localhost:3000/api/contributions/payment-history/findOne/1
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+### Crear un registro de pago
+POST http://localhost:3000/api/contributions/payment-history/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "paymentDate": "2025-08-09",
+  "amount": 200000,
+  "user": { "_id": "58c609d6-31ec-4e11-9635-eb55345598f8" },
+  "contribution": { "id": 1 }
+}
+
+###
+
+### Actualizar un registro
+PATCH http://localhost:3000/api/contributions/payment-history/update/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "amount": 250000
+}
+
+###
+
+### Eliminar un registro
+DELETE http://localhost:3000/api/contributions/payment-history/remove/1
+Authorization: Bearer {{token}}
+Accept: application/json

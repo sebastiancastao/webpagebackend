@@ -1,0 +1,25 @@
+### 🔁 Drop y sincronizar esquema
+POST http://localhost:3000/api/db/config/dropAndSync
+Content-Type: application/json
+
+###
+
+### 🌱 Ejecutar seeders
+POST http://localhost:3000/api/db/config/runSeeders
+Content-Type: application/json
+
+###
+
+### 💥 Drop y seed (sincronizar y luego ejecutar seeders)
+POST http://localhost:3000/api/db/config/dropAndSeed
+Content-Type: application/json
+
+###
+
+### 🧠 Ejecutar una query SQL
+POST http://localhost:3000/api/db/config/runSQLQuery
+Content-Type: application/json
+
+{
+  "query": "SELECT * FROM shortener LIMIT 5"
+}

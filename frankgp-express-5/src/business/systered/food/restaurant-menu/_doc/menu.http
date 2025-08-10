@@ -1,0 +1,51 @@
+### Get all menu items
+GET http://localhost:3000/api/restaurant/menu/getAll
+Content-Type: application/json
+
+###
+
+### Get a specific menu item by ID
+GET http://localhost:3000/api/restaurant/menu/1
+Content-Type: application/json
+
+###
+
+### Create a new menu item
+POST http://localhost:3000/api/restaurant/menu
+Content-Type: application/json
+
+{
+  "name": "Pizza Margarita",
+  "slug": "pizza-margarita",
+  "price": 25.99,
+  "offerPrice": 22.50,
+  "description": "Clásica pizza con mozzarella y albahaca.",
+  "images": ["/images/pizza.jpg"],
+  "videos": [],
+  "recomendacionDelDia": true,
+  "category": 1
+}
+
+###
+
+### Update a menu item
+PUT http://localhost:3000/api/restaurant/menu/1
+Content-Type: application/json
+
+{
+  "name": "Pizza Margarita Especial",
+  "slug": "pizza-margarita-especial",
+  "price": 27.50,
+  "offerPrice": 23.50,
+  "description": "Con ingredientes extra y masa artesanal.",
+  "images": ["/images/pizza-especial.jpg"],
+  "videos": [],
+  "recomendacionDelDia": false,
+  "category": 1
+}
+
+###
+
+### Delete a menu item
+DELETE http://localhost:3000/api/restaurant/menu/1
+Content-Type: application/json

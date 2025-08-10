@@ -1,0 +1,41 @@
+### Get all categories
+GET http://localhost:3000/api/restaurant/category/findAll
+Content-Type: application/json
+
+###
+
+### Get category by ID
+GET http://localhost:3000/api/restaurant/category/1
+Content-Type: application/json
+
+###
+
+### Create a new category
+POST http://localhost:3000/api/restaurant/category
+Content-Type: application/json
+
+{
+  "name": "Bebidas",
+  "slug": "bebidas",
+  "description": "Categoría de bebidas",
+  "thumbnail": "/images/bebidas.jpg"
+}
+
+###
+
+### Update category (e.g., id = 1)
+PUT http://localhost:3000/api/restaurant/category/1
+Content-Type: application/json
+
+{
+  "name": "Bebidas frías",
+  "slug": "bebidas-frias",
+  "description": "Solo bebidas frías",
+  "thumbnail": "/images/bebidas-frias.jpg"
+}
+
+###
+
+### Delete category (e.g., id = 1)
+DELETE http://localhost:3000/api/restaurant/category/1
+Content-Type: application/json

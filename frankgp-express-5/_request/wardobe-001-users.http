@@ -1,0 +1,65 @@
+@token={{$dotenv ACCESS_TOKEN_ADMIN}}
+
+### ✅ Obtener todos los usuarios del armario
+GET http://localhost:3000/api/wardrobe-users/findAll
+Authorization: Bearer {{token}}
+
+### ✅ Obtener un usuario específico por ID
+GET http://localhost:3000/api/wardrobe-users/findOne/1
+# Authorization: Bearer {{token}}
+
+### ✅ Crear un nuevo usuario de armario
+POST http://localhost:3000/api/wardrobe-users/create
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "User 1",
+  "email": "user@example.com",
+  "username": "user1",
+   "wardrobes": [{
+  "name": "Armario de verano",
+  "slug": "armario-de-verano",
+  "description": "Ropa ligera y fresca para el verano",
+  "tops": [
+    {
+      "color": "Azul",
+      "size": "M",
+      "brand": "Zara",
+      "type": "Camiseta",
+      "image": "imagen1.jpg"
+    }
+  ],
+  "bottoms": [
+    {
+      "color": "Beige",
+      "size": "32",
+      "brand": "H&M",
+      "type": "Short",
+      "image": "imagen2.jpg"
+    }
+  ],
+  "accessories": [
+    {
+      "color": "Negro",
+      "size": "Único",
+      "brand": "Gucci",
+      "type": "Gorra",
+      "image": "imagen3.jpg"
+    }
+  ]
+}]
+}
+
+### ✅ Actualizar un usuario de armario
+PATCH http://localhost:3000/api/wardrobe-users/update/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "username": "newUser1"
+}
+
+### ✅ Eliminar un usuario de armario
+DELETE http://localhost:3000/api/wardrobe-users/remove/1
+Authorization: Bearer {{token}}

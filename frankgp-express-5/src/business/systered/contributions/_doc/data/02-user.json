@@ -1,0 +1,32 @@
+{
+  "userId": 1,
+  "fullName": "Pedro Contreras",
+  "periodId": 1,
+  "contributions": [
+    {
+      "fundType": "FONDO1",
+      "valuePerQuota": 20000,
+      "totalQuotas": 27,
+      "totalAmount": 540000
+    },
+    {
+      "fundType": "FONDO2",
+      "valuePerQuota": 50000,
+      "totalQuotas": 27,
+      "totalAmount": 1350000
+    }
+  ],
+  "totalAnnualSaving": 1890000,
+  "scheduledPayouts": [
+    {
+      "puesto": 15,
+      "paymentDate": "2025-04-04",
+      "totalPayment": 50000
+    },
+    {
+      "puesto": 17,
+      "paymentDate": "2025-05-02",
+      "totalPayment": 50000
+    }
+  ]
+}

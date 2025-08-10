@@ -1,0 +1,39 @@
+@token = {{$processEnv TOKEN}}
+
+### GET ALL - Ver todos los registros
+GET http://localhost:3000/api/stat/findAll
+Content-Type: application/json
+
+### 🔗 Estadísticas agrupadas por URL (-5 horas para Perú)
+GET http://localhost:3000/api/stat/analytics/by-url 
+?dateFrom=2025-05-22T10:46
+&dateTo=2025-05-22T10:48
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+
+### 📊 Resumen general de estadísticas
+GET http://localhost:3000/api/stat/analytics/summary
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+
+### 📆 Estadísticas por rango de fechas
+GET http://localhost:3000/api/stat/analytics/by-date
+&dateFrom=2025-05-18
+&dateTo=2025-08-20
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+
+### 🌍 Estadísticas agrupadas por país
+GET http://localhost:3000/api/stat/analytics/by-country
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+
+### 👥 Estadísticas por fuente afiliado (?source=afiliado1)
+GET http://localhost:3000/api/stat/analytics/by-affiliate
+?source=afiliado1
+Authorization: Bearer {{token}}
+Content-Type: application/json

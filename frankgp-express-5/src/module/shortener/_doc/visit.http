@@ -1,0 +1,5 @@
+### Todas las visitas
+GET http://localhost:3000/api/shortener/visit
+
+### Visitas por ID de shortener
+GET http://localhost:3000/api/shortener/visit/1

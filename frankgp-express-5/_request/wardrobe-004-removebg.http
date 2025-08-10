@@ -1,0 +1,17 @@
+# https://api.frankgp.com/app
+
+### remove-background/upload
+POST https://api.frankgp.com/v1.0/removebg
+X-Api-Key: MY_API_KEY
+Content-Type: multipart/form-data; boundary=RemoveBG
+
+--RemoveBG
+Content-Disposition: form-data; name="image_file"; filename="test-image.jpg"
+Content-Type: image/jpeg
+
+< ./test-image.jpg
+--RemoveBG
+Content-Disposition: form-data; name="size"
+
+auto
+--RemoveBG--

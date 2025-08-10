@@ -1,0 +1,31 @@
+@ACCESS_TOKEN_ADMIN={{$dotenv ACCESS_TOKEN_ADMIN}}
+# @ACCESS_TOKEN_USER={{$dotenv ACCESS_TOKEN_USER}}
+@ACCESS_TOKEN_USER=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODg2ZWY5ZGQ1YTdkZThhYTU4MmE2YjIiLCJ1c2VySWQiOiI2ODg2ZWY5ZGQ1YTdkZThhYTU4MmE2YjIiLCJlbWFpbCI6ImZncDU1NUBnbWFpbC5jb20iLCJyb2xlcyI6WyJzdXBlcmFkbWluIl0sInRva2VuVHlwZSI6ImFjY2VzcyIsImlhdCI6MTc1MzY3NjIwOCwiZXhwIjoxNzU2MjY4MjA4fQ.2F-BX51gNJ6D5Rdu0WgZc7EXlkWo0qRDCgh55hTA-Nk
+
+###
+GET http://localhost:3000/api/users/findAll
+Authorization: Bearer {{ACCESS_TOKEN_USER}}
+
+###
+GET http://localhost:3000/api/auth/me
+Authorization: Bearer {{ACCESS_TOKEN_USER}}
+
+###
+GET http://localhost:3000/api/users/findOne/687af493a6fd38a94379bcb8
+Authorization: Bearer {{ACCESS_TOKEN_USER}}
+
+### Update user
+PATCH http://localhost:3000/api/users/update/687aedc7a9b9dce563b1d35e
+Authorization: Bearer {{ACCESS_TOKEN_ADMIN}}
+Content-Type: application/json
+
+{
+    "name": "ana_admin",
+    "email": "ana_admin@gmail.com",
+    "password": "ana_admin@gmail.com",
+    "role": "admin"
+}
+
+###
+DELETE http://localhost:3000/api/users/remove/6882a50162386fae3b7dd258
+Authorization: Bearer {{ACCESS_TOKEN_ADMIN}}

@@ -1,0 +1,46 @@
+@token=Bearer {{$processEnv TOKEN}}
+@timestamp={{$timestamp -1740241257 s}}
+
+### findAll
+# @name totalusers
+@res_body_total={{totalusers.response.body.totalItems}}
+
+GET http://localhost:3000/api/users/findAll
+Authorization: {{token}}
+
+### findOne
+GET http://localhost:3000/api/users/findOne/083d01ae-5f1b-44c7-802c-a3dbb1b78a89
+Authorization: {{token}}
+
+### create
+POST http://localhost:3000/api/users/create
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "_id": "58c609d6-31ec-4e11-9635-eb55345598f8",
+    "username": "user_{{timestamp}}",
+    "name": "User",
+    "lastName": "LastName",
+    "email": "user_{{res_body_total}}@gmail.com",
+    "password": "P4ssWord@123",
+    "whatsapp": "{{timestamp}}",
+    "photo": "https://i.postimg.cc/T3PVPkLH/icon-user.webp",
+    "role": "admin",
+    "sendMail": false,
+    "sendWhatsApp": false
+}
+
+### update
+PATCH http://localhost:3000/api/users/update/54695949-687c-45f5-b7df-4a08d810f0ee
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "email": "updateduser@example.com",
+    "password": "P4ssWord@123"
+}
+
+### remove
+DELETE http://localhost:3000/api/users/remove/6877f5f65d71f80405d35e96
+Authorization: {{token}}

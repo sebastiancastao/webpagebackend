@@ -1,0 +1,48 @@
+@token = admin {{$processEnv TOKEN}}
+
+###
+
+GET http://localhost:3000/api/options/getBootCount 
+Authorization: {{token}}
+
+### Create a new option
+
+POST http://localhost:3000/api/options/create 
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "key": "site_title",
+    "type": "string",
+    "value": "Mi Sitio Web"
+}
+
+### Get all options
+
+GET http://localhost:3000/api/options/findAll 
+Authorization: {{token}}
+
+### Get one option by ID
+
+GET http://localhost:3000/api/options/findOne/1 
+Authorization: {{token}}
+
+### Get option by key
+
+GET http://localhost:3000/api/options/findByKey/site_title 
+Authorization: {{token}}
+
+### Update option
+
+PATCH http://localhost:3000/api/options/update/1 
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "value": "Nuevo Título del Sitio"
+}
+
+### Delete option
+
+DELETE http://localhost:3000/api/options/remove/1 
+Authorization: {{token}}

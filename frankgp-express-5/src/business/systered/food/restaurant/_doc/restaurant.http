@@ -1,0 +1,57 @@
+### Get all restaurant locations
+GET http://localhost:3000/api/restaurant/findAll
+Content-Type: application/json
+
+### Get restaurant by slug
+GET http://localhost:3000/api/restaurant/slug/la-espanolita
+Content-Type: application/json
+
+### Get all waiters by restaurant slug
+GET http://localhost:3000/api/restaurant/waiter/la-espanolita
+Content-Type: application/json
+
+### Get all categories by restaurant slug
+GET http://localhost:3000/api/restaurant/categories/la-espanolita
+Content-Type: application/json
+
+### Get all categories by restaurant slug
+GET http://localhost:3000/api/restaurant/categories/la-espanolita?menuName=Cazuela
+Content-Type: application/json
+
+### Get tables by restaurant slug
+GET http://localhost:3000/api/restaurant/tables/la-espanolita
+Content-Type: application/json
+
+### Get a specific restaurant location by ID
+GET http://localhost:3000/api/restaurant/1
+Content-Type: application/json
+
+###
+
+### Create a new restaurant location
+POST http://localhost:3000/api/restaurant
+Content-Type: application/json
+
+{
+  "location": "📍Main Location San Gil – Road to Barichara",
+  "whatsapp": "3101234567",
+  "instagram": "https://www.instagram.com/sangilenacampestre"
+}
+
+###
+
+### Update an existing restaurant location (ID = 1)
+PUT http://localhost:3000/api/restaurant/1
+Content-Type: application/json
+
+{
+  "location": "📍Actualizado - Km7 vía Florida",
+  "whatsapp": "3112113571",
+  "instagram": "https://www.instagram.com/sangilenacampestre"
+}
+
+###
+
+### Delete a restaurant location (ID = 1)
+DELETE http://localhost:3000/api/restaurant/1
+Content-Type: application/json
